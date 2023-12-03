@@ -65,7 +65,8 @@
 	例如[0.123456,0.123456]，先经度后纬度，可以去 https://lbs.amap.com/console/show/picker 高德取坐标，直接把结果复制到[]里即可
 	每家坐标拾取器标准不同，本脚本采用XY轴坐标格式。打不开换fakelocation，例如北京[116.000000,40.000000]<br>
 	关于学校ID
-	可以前往 https://api.xixunyun.com/login/schoolmap 查询，打不开换这个https://oss-resume.xixunyun.com/school_map/app202311.json，比如CCIT=7，比如山东商务职业学院ID为222<br>
+	可以前往 https://api.xixunyun.com/login/schoolmap 查询，打不开换这个https://oss-resume.xixunyun.com/school_map/app202311.json
+，比如CCIT=7，比如山东商务职业学院ID为222<br>
     </details>
 - 设置好环境变量后点击你的仓库上方的 Actions 选项，会打开一个如下的页面，点击 `I understand...` 按钮确认在 Fork 的仓库上启用 GitHub Actions 。
 - 最后在你这个 Fork 的仓库内随便改点什么（比如给 README 文件删掉或者增加几个字符）提交一下手动触发一次 GitHub Actions 就可以了 **（重要！！！测试发现在 Fork 的仓库上 GitHub Actions 的定时任务不会自动执行，必须要手动触发一次后才能正常工作）** 。
@@ -98,7 +99,7 @@
 - 配置自动执行时间
 时间配置在`xixunyun/.github/workflows/sign.yml`文件中 第九行    `- cron: '* * * * *'`
 默认：每天早上八点自动执行签到脚本（github有时间延迟与相应限制），你也可以通过 `Push` 操作手动触发执行。
-如需自定义时间，请配合[cron表达在线生成器](https://cron.clost.net "cron表达在线生成器")使用
+如需自定义时间，请配合[cron表达在线生成器](https://cron.clost.net "cron表达在线生成器")使用，没有自行百度
 
 
 
